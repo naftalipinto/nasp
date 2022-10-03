@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="NASP" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsividade.css">
+    <title>NASP</title>
+    <meta name="NASP">
+    
+</head>
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+           <img src="img/horizontal_on_white_by_logaster.png" alt="" height="80px">
+        </div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#services">Serviços</a>
+            <a href="#about">Sobre</a> 
+            <a href="#" id="btn" onclick="abrir()">Contacte</a>
+
+        </div>
+
+    </nav>
+
+
+
+
+    <header class="header" id="home">
+        
+        <div class="headline">
+            <h2 style="letter-spacing:10px;" >Você achou a melhor</h2>
+            <h2 style="font-size:60px">Agencia Digital</h2>
+
+            <p> NASP é o Paráiso Digital</p>
+
+             <p id="sub">Aqui você encontra as respostas para o todos problemas, junta-te a nós e deixa o teu Negócio mais Visível e seguro com as propostas que só nós podemos oferecer, não perca tempo e clique no botão aqui abaixo !!!</p>
+
+            <a href="#" class="btn-ct" onclick="abrir()">Contra-te agora</a>
+           
+        </div>
+        <div class="img-headline">
+            <img src="img/Digital-Marketing.png"  alt="" style="max-width:100%;max-height: 100%;">
+                
+        </div>
+    </header>
+
+    <section id="services">
+        <h2>
+            O que podemos fazer pelo seu negócio?
+        </h2>
+        <div class="serve">
+            <div class="card">
+                <img src="img/internet_30px.png" alt="">
+              <div class="card-text">
+                 <h3 style="text-align:center;">Desenvolvimento de Sites</h3>
+                <p>Desenvolvimento web é a área da tecnologia voltada à construção de sites, aplicativos, softwares, bancos de dados e quaisquer outras ferramentas que, de certa forma, constroem a internet como a conhecemos hoje.</p>
+            </div> 
+
+            <div class="card-text-info">
+                <h3>Explicação</h3>
+               <p>O Desenvolvimento Web é responsável por codificar os sites, páginas, portais e aplicativos para a web. Com isso, é ele o responsável por toda a estrutura de um site, tanto da parte que o usuário consegue ver e interagir, quanto a parte por trás, que o usuário não vê, mas que faz toda a diferença na experiência ao usar o site.</p>
+           </div> 
+            </div>
+            <div class="card">
+                <img src="img/management_30px.png" alt="">
+                <div class="card-text">
+                    <h3 style="text-align:center;">Sistema de Gestão</h3>
+                <p>sistema de gestão empresarial tem como objetivo ampliar a produtividade da empresa, gerar melhores resultados para os setores, contribuir para a eficiência de uma atividade ou executar atividades que sem eles seriam improváveis.</p>
+            </div> 
+
+            <div class="card-text-info">
+                <h3>Explicação</h3>
+               <p>O sistema de gestão é um software que permite gerir diferentes tarefas, processos e informações que são operacionalizadas dentro de uma empresa. Dessa forma, ele é uma plataforma inteligente que automatiza vários processos operacionais e conecta as áreas da empresa.</p>
+           </div> 
+
+            </div>
+            <div class="card">
+                <img src="img/marketing_30px.png" alt="">
+               <div class="card-text">
+                 <h3 style="text-align:center;">Marketing Digital</h3>
+                <p>Marketing digital é o processo de atrair clientes e identificar, antecipar e satisfazer as suas necessidades e desejos, através da internet e dispositivos com base digital, como computadores, smartphones ou tablets.</p>
+            </div> 
+
+            <div class="card-text-info">
+                <h3>Explicação</h3>
+               <p>Tráfego pago na internet é aquele que vem de anúncios feitos em mecanismos de busca, redes sociais e até mesmo em outros sites. No Marketing Digital, é usado para conduzir visitantes a páginas estratégicas para as empresas, como as de vendas ou de conversão.</p>
+           </div> 
+
+            </div>
+        </div>
+    </section>
+
+<section id="about">
+    <h2 class="qm">Quem nós somos?</h2>
+    <div class="left-s">
+
+        <img src="img/sobre-nos.png" style="max-width:100%;max-height: 100%; border-radius: 20px;">
+    </div>
+    <div class="right-s">
+        <h2 style="color:#090420">NASP</h2>
+        <p>Com uma forte base de competências técnicas para a consultoria digital focada na gestão de produto, vamos acelerar a visão do amanhã, desbloqueando o potencial dos negócios de hoje a criatividade é a competência que acompanha o nosso dia a dia. Unimos diversas mentes que trabalham em harmonia para tornar problemas e desafios em oportunidades de crescimento. Promovemos as ligações humanas por meio de estratégias perspicazes, design sofisticado e experiências digitais impactantes.</p>
+        <br>
+        <p>Acreditamos que uma experiência de utilizador perfeita requer a adoção de uma cultura de melhoria contínua. Cultivamos um ambiente diversificado onde a engenhosidade pode prosperar sem preconceitos, com base na aprendizagem, crescimento pessoal, curiosidade e experimentação.</p>
+    </div>
+</section>
+
+<div class="pop-up" id="popup">
+    <img src="../img/Close_30px.png" alt="" id="close" onclick="fechar()">
+    <h2>Fale Connosco</h2>
+
+    <form action="php/send.php" method="POST">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="" placeholder="Insira o seu Nome">
+
+        <label for="nome">Email</label>
+        <input type="email" name="email" id="" placeholder="Insira o seu E-mail">
+
+        <label for="assunto">Mensagem</label>
+        <input type="text" name="mensagem" id="assunto" placeholder="Mensagem...">
+
+        <button>Enviar</button>
+      <label for="" id="seguir">Deixar mensagem no Instagram</label>  <img src="../img/Instagram_30px.png" alt="" id="ig">
+
+
+    </form>
+
+</div>
+
+    <footer>
+        <div class="logo-ft">
+
+            <h1 style="color: white;" class="logo-ft-nm">NASP</h1>
+            <p style="color: white;">Site desenvolvido por @naftalipinto</p>
+        </div>
+       
+    </footer>
+
+    <script src="js/fn.js">
+
+   <?php if(isset($_GET['send']) && $_GET['send'] == 1): ?>
+            alert('E-mail enviado com sucesso');
+        <?php elseif(isset($_GET['send']) && $_GET['send'] == 0): ?>
+            alert('Erro ao enviar o seu e-mail');
+        <?php endif; ?>
+
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
+*{
+   
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: white;
+
+}
+
+
+.navbar{
+   width: 100%;
+   position: fixed;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+.logo{
+    flex: 30%;
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
+    
+    
+}
+.logo h1{
+    color: #180f4a;
+    letter-spacing: 2px;
+    
+
+}
+.menu{
+    flex:70%;
+    text-align: right;
+    padding: 20px; 
+    position: relative;
+}
+
+.menu a{
+    color: #180f4a;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 15px;
+}
+
+.menu a:hover{
+    color: #8EC2FE;
+    border-bottom:4px solid  #180f4a;
+
+}
+#btn{
+    background:#180f4a ;
+    padding: 10px 25px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+#btn:hover{
+    border: none;
+    background: #8EC2FE;
+    
+}
+
+.header{
+    z-index: 0;
+    height: 600px;
+    width: 90%;
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.headline{
+    flex: 40%;
+    margin-left: 5%;
+    
+}
+.headline h2{
+    font-weight: 600;
+    color: #180f4a;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+.img-headline{
+    margin-right: 5%;
+    flex: 40%;
+    text-align: center;
+}
+.headline p{
+    color: #090420;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+}
+#sub{
+    text-align: left;
+    font-size: 16px;
+    color: black;
+    text-transform: none;
+    font-weight: 400;
+}
+
+
+
+.btn-ct{
+    background: #090420;
+    padding: 20px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+
+.btn-ct:hover{
+    background: #8EC2FE;
+}
+
+section{
+    margin:80px 5% 0 5%;
+    display: inline-block;
+    text-align: center;
+    padding: 5%;
+   
+
+}
+
+
+#services h2{
+    font-family:'Roboto Flex', sans-serif;
+    margin-top: 2%;
+}
+
+
+section h2{
+    width: 100%;
+    font-size: 50px;
+    margin: 0;
+    font-weight: bold;
+
+}
+
+.serve{
+    display: inline-block;
+    margin-top: 3%;
+}
+.card{
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    border: 1px solid  #090420;
+    margin: 1%;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.card:hover{
+    background: #8EC2FE;
+    color: white;
+    padding: 25px;
+    
+}
+
+.card-text{
+    text-align: start;
+    word-spacing: 2px;
+    text-indent: 10px;
+    padding: 5px;
+    
+}
+
+.card-text-info{
+    text-align: start;
+    word-spacing: 1px;
+    text-indent: 20px;
+    display: none;
+}
+
+.card:hover img{
+    display: none;
+}
+.card:hover .card-text{
+    display: none;
+}
+.card:hover .card-text-info{
+    display: block;
+}
+
+#about{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   padding: 100px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: -1%;
+}
+
+#about .qm{
+    font-family:'Roboto Flex', sans-serif;
+    margin-bottom: 100px;
+}
+.left-s{
+    flex: 40%;
+}
+
+.right-s{
+    flex: 40%;
+}
+
+
+.right-s p{
+    padding: 1px;
+    text-align: left;
+    text-indent: 4px;
+    
+}
+
+footer{
+    margin-top: 50px;
+    height: 200px;
+    background-image: linear-gradient(180deg,#8EC2FE,#180f4a,#090420,black);
+    text-align: center;
+    overflow: hidden;
+}
+
+.logo-ft{
+    padding: 50px;
+}
+.logo-ft-nm{
+    letter-spacing: 2px;
+}
+
+
+btn-pop{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    background: gray;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+
+}
+#popup{
+    display: none;
+    transition: 1s ease;
+    z-index: 1;
+}
+
+
+.pop-up{
+    background: #8EC2FE;
+    border-radius: 15px;
+    position: absolute;
+    padding: 20px 26px 30px 20px;
+    top: 30%;
+    left: 34%;
+    width: 32vw;
+    height: 55vh;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+}
+
+
+
+
+ #close, #ig{
+    float: right;
+    cursor: pointer;
+}
+.pop-up h2{
+    text-align: center;
+    font-family:'Roboto Flex', sans-serif;
+}
+
+.pop-up label{
+    font-size: 15px;
+    font-weight: 300;
+    font-family:'Roboto Flex', sans-serif;
+    margin-bottom: 4px;
+
+}
+
+.pop-up form input{
+    display: block;
+    padding: 10px;
+    width: 400px;
+    font-family:'Roboto Flex', sans-serif;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+     
+}
+
+.pop-up #assunto{
+    padding: 30px;
+}
+#seguir{
+    display: inline-block;
+    position: absolute;
+    right: 55px;
+    bottom: 18px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+
+.pop-up button{
+    padding: 4px;
+    border: none;
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 15px;
+    width: 60px;
+    cursor: pointer;
+}
+

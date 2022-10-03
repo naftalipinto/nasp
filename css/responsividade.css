@@ -1,0 +1,71 @@
+@media screen and (max-width:1005px) {
+    .menu{display: none;
+    }
+    .navbar{
+        position: relative;
+    }
+    .logo{
+        margin: 0;
+        text-align: center;
+    }
+    .header{
+        padding-top: 40px;
+        width: 100%;
+        height: auto;
+    }
+
+    .headline{
+        flex: 100%;
+        margin: 5%;
+        text-align: center;
+    }
+
+    #sub{
+        text-align: justify;
+        font-size: 16px;
+        
+    }
+
+    #services h2{
+        font-family:'Roboto Flex', sans-serif;
+        margin-top: 6%;
+    }
+
+    .headline p{
+        text-align: center;
+    }
+
+    .img-headline{
+        flex: 100%;
+        margin: 5%;
+        text-align: center;
+    }
+    .card{
+        width: 100%;
+    }
+    
+    section{
+        margin-top: 200px;
+    }
+
+    .left-s{
+        flex: 100%;
+    }
+    #seguir{
+        bottom: 30px;
+        display: inline-block;
+        position: absolute;
+    }
+
+.pop-up{
+    width: 73vw;
+    left: 10%;
+   padding: 5px 7px 5px 7px;
+}
+
+.pop-up form input{
+    padding: 10px;
+    width: 350px;
+}
+    
+}
